@@ -61,14 +61,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fish-and-richardson-pc/apollo-datasource-msnodesqlv8@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@fish-and-richardson-pc/apollo-datasource-msnodesqlv8@npm:0.1.0"
+"@fish-and-richardson-pc/apollo-datasource-msnodesqlv8@npm:0.1.2":
+  version: 0.1.2
+  resolution: "@fish-and-richardson-pc/apollo-datasource-msnodesqlv8@npm:0.1.2"
   dependencies:
     apollo-datasource: ^3.3.1
     apollo-server-caching: ^3.3.0
     msnodesqlv8: ^2.4.4
-  checksum: 59fce85aa51d566d56e2c9a1d4b532e60d4671132f94830729d44ce760a2919a50c2fe91985536691ea6aa929f444a060fdee7451691667e50ac7008629bd587
+  checksum: 59685603c309aafa86351398116f5f01efd61b834a40d1a7dc291c4df54d461f36ed29b232b330a9d9cf042c80b1ac7a91a4955f1cee0ba8e95623bab5a28a05
+  languageName: node
+  linkType: hard
+
+"@fish-and-richardson-pc/apollo-datasource-msnodesqlv8@patch:@fish-and-richardson-pc/apollo-datasource-msnodesqlv8@npm:0.1.2#.yarn/patches/@fish-and-richardson-pc-apollo-datasource-msnodesqlv8-npm-0.1.2-2ac03eefdd::locator=sql-injection-fail-example%40workspace%3A.":
+  version: 0.1.2
+  resolution: "@fish-and-richardson-pc/apollo-datasource-msnodesqlv8@patch:@fish-and-richardson-pc/apollo-datasource-msnodesqlv8@npm%3A0.1.2#.yarn/patches/@fish-and-richardson-pc-apollo-datasource-msnodesqlv8-npm-0.1.2-2ac03eefdd::version=0.1.2&hash=354c4a&locator=sql-injection-fail-example%40workspace%3A."
+  dependencies:
+    apollo-datasource: ^3.3.1
+    apollo-server-caching: ^3.3.0
+    msnodesqlv8: ^2.4.4
+  checksum: 0f511ae7b2235da0f14c71e56a3c92406a402fde7f55e8ac7a15217e3399e1aef25c9c8f03fb2be793624e671ba8686669262e1992987f94b1e1b88270d229b0
   languageName: node
   linkType: hard
 
@@ -1803,6 +1814,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prettier@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "prettier@npm:2.5.1"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 21b9408476ea1c544b0e45d51ceb94a84789ff92095abb710942d780c862d0daebdb29972d47f6b4d0f7ebbfb0ffbf56cc2cfa3e3e9d1cca54864af185b15b66
+  languageName: node
+  linkType: hard
+
 "process-nextick-args@npm:~2.0.0":
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
@@ -2095,9 +2115,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sql-injection-fail-example@workspace:."
   dependencies:
-    "@fish-and-richardson-pc/apollo-datasource-msnodesqlv8": ^0.1.0
+    "@fish-and-richardson-pc/apollo-datasource-msnodesqlv8": ^0.1.2
     apollo-server: ^3.6.2
     graphql: ^16.3.0
+    msnodesqlv8: ^2.4.4
+    prettier: ^2.5.1
     ts-node: ^10.4.0
     typescript: ^4.5.5
   languageName: unknown

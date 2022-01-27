@@ -1,0 +1,12 @@
+diff --git a/build/index.js b/build/index.js
+index eab7e7fa705a088188f9c566a05f29da5f7a1fa6..a23992d60a407a8f465055dd3c38091f3fc9c0a6 100644
+--- a/build/index.js
++++ b/build/index.js
+@@ -67,6 +67,7 @@ class MssqlDataSource extends apollo_datasource_1.DataSource {
+ 				${params.map(([key, value]) => value.toParamText(key, value.value)).join(";\n")}
+ 				${query}
+ 			`;
++            console.log(queryText);
+             return this.pool.promises
+                 .query(queryText, 
+             // eslint-disable-next-line @typescript-eslint/no-unsafe-return

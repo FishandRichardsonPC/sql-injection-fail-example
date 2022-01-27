@@ -35,9 +35,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["@fish-and-richardson-pc/apollo-datasource-msnodesqlv8", "npm:0.1.0"],
+            ["@fish-and-richardson-pc/apollo-datasource-msnodesqlv8", "patch:@fish-and-richardson-pc/apollo-datasource-msnodesqlv8@npm%3A0.1.2#.yarn/patches/@fish-and-richardson-pc-apollo-datasource-msnodesqlv8-npm-0.1.2-2ac03eefdd::version=0.1.2&hash=354c4a&locator=sql-injection-fail-example%40workspace%3A."],
             ["apollo-server", "virtual:22980c67da6ead6d2c8eafcee7993b384d5a016e1c76d176d64546acf5e1ce4332f83445a4457af08e44d712a7c05e90563aa4cb408044aa573c270dc0f9f36d#npm:3.6.2"],
             ["graphql", "npm:16.3.0"],
+            ["msnodesqlv8", "npm:2.4.4"],
+            ["prettier", "npm:2.5.1"],
             ["ts-node", "virtual:22980c67da6ead6d2c8eafcee7993b384d5a016e1c76d176d64546acf5e1ce4332f83445a4457af08e44d712a7c05e90563aa4cb408044aa573c270dc0f9f36d#npm:10.4.0"],
             ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53"]
           ],
@@ -118,10 +120,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@fish-and-richardson-pc/apollo-datasource-msnodesqlv8", [
-        ["npm:0.1.0", {
-          "packageLocation": "./.yarn/cache/@fish-and-richardson-pc-apollo-datasource-msnodesqlv8-npm-0.1.0-753b13f460-59fce85aa5.zip/node_modules/@fish-and-richardson-pc/apollo-datasource-msnodesqlv8/",
+        ["patch:@fish-and-richardson-pc/apollo-datasource-msnodesqlv8@npm%3A0.1.2#.yarn/patches/@fish-and-richardson-pc-apollo-datasource-msnodesqlv8-npm-0.1.2-2ac03eefdd::version=0.1.2&hash=354c4a&locator=sql-injection-fail-example%40workspace%3A.", {
+          "packageLocation": "./.yarn/cache/@fish-and-richardson-pc-apollo-datasource-msnodesqlv8-patch-355e7905b3-0f511ae7b2.zip/node_modules/@fish-and-richardson-pc/apollo-datasource-msnodesqlv8/",
           "packageDependencies": [
-            ["@fish-and-richardson-pc/apollo-datasource-msnodesqlv8", "npm:0.1.0"],
+            ["@fish-and-richardson-pc/apollo-datasource-msnodesqlv8", "patch:@fish-and-richardson-pc/apollo-datasource-msnodesqlv8@npm%3A0.1.2#.yarn/patches/@fish-and-richardson-pc-apollo-datasource-msnodesqlv8-npm-0.1.2-2ac03eefdd::version=0.1.2&hash=354c4a&locator=sql-injection-fail-example%40workspace%3A."],
             ["apollo-datasource", "npm:3.3.1"],
             ["apollo-server-caching", "npm:3.3.0"],
             ["msnodesqlv8", "npm:2.4.4"]
@@ -2266,6 +2268,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["prettier", [
+        ["npm:2.5.1", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.5.1-58b195b509-21b9408476.zip/node_modules/prettier/",
+          "packageDependencies": [
+            ["prettier", "npm:2.5.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["process-nextick-args", [
         ["npm:2.0.1", {
           "packageLocation": "./.yarn/cache/process-nextick-args-npm-2.0.1-b8d7971609-1d38588e52.zip/node_modules/process-nextick-args/",
@@ -2599,9 +2610,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["sql-injection-fail-example", "workspace:."],
-            ["@fish-and-richardson-pc/apollo-datasource-msnodesqlv8", "npm:0.1.0"],
+            ["@fish-and-richardson-pc/apollo-datasource-msnodesqlv8", "patch:@fish-and-richardson-pc/apollo-datasource-msnodesqlv8@npm%3A0.1.2#.yarn/patches/@fish-and-richardson-pc-apollo-datasource-msnodesqlv8-npm-0.1.2-2ac03eefdd::version=0.1.2&hash=354c4a&locator=sql-injection-fail-example%40workspace%3A."],
             ["apollo-server", "virtual:22980c67da6ead6d2c8eafcee7993b384d5a016e1c76d176d64546acf5e1ce4332f83445a4457af08e44d712a7c05e90563aa4cb408044aa573c270dc0f9f36d#npm:3.6.2"],
             ["graphql", "npm:16.3.0"],
+            ["msnodesqlv8", "npm:2.4.4"],
+            ["prettier", "npm:2.5.1"],
             ["ts-node", "virtual:22980c67da6ead6d2c8eafcee7993b384d5a016e1c76d176d64546acf5e1ce4332f83445a4457af08e44d712a7c05e90563aa4cb408044aa573c270dc0f9f36d#npm:10.4.0"],
             ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53"]
           ],

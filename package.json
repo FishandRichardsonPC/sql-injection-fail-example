@@ -1,0 +1,16 @@
+{
+  "name": "sql-injection-fail-example",
+  "packageManager": "yarn@3.1.1",
+  "dependencies": {
+    "@fish-and-richardson-pc/apollo-datasource-msnodesqlv8": "^0.1.0",
+    "apollo-server": "^3.6.2",
+    "graphql": "^16.3.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  }
+}
